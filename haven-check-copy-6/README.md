@@ -53,7 +53,7 @@ HavenCheck is styled in an optimistic, early-2000s **Frutiger Aero** aesthetic i
 
 ### 1. Clone & Enter Project Directory
 ```bash
-cd /Users/lucas/.gemini/antigravity/scratch/haven-check
+cd /Users/<Your Account Name>/.gemini/antigravity/scratch/haven-check
 ```
 
 ### 2. Configure Environment Variables
@@ -141,6 +141,3 @@ npm run build
 ```
 
 ---
-
-## 📜 License
-MIT License. Built with care for HackNC.
