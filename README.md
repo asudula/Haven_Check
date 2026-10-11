@@ -18,7 +18,7 @@ For individuals experiencing schizophrenia, sensory overwhelm, or perception dis
 4. **Never makes absolute claims of reality** — it respects the user, avoids diagnosing or treating, refuses to confirm persecutory narratives, and includes built-in mental health support helplines (988, Crisis Text Line 741741, SAMHSA).
 
 ### 🤖 Best Use of Gemini API
-HavenCheck leverages the official **Google GenAI SDK (`@google/genai`)** with Gemini's state-of-the-art multimodal vision capabilities (`gemini-2.5-flash`):
+HavenCheck leverages the official **Google GenAI SDK (`@google/genai`)** with Gemini's state-of-the-art multimodal vision capabilities (`gemini-3.5-flash`):
 - **Multimodal Visual Reasoning**: Analyzes high-resolution indoor photographs alongside natural-language inquiries.
 - **Strict Structured JSON Schema**: Uses `responseMimeType: "application/json"` and `responseSchema` to guarantee consistent, type-safe output:
   ```json
@@ -139,8 +139,3 @@ npx tsc --noEmit
 # Run Production Build
 npm run build
 ```
-
----
-
-## 📜 License
-MIT License. Built with care for HackNC.
