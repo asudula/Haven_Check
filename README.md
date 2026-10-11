@@ -6,9 +6,7 @@ Built for **HackNC** &bull; **Community Track** &bull; **Best Use of Gemini API*
 
 ---
 
-## 🌟 Hackathon Pitch
-
-### 🤝 Community Track Fit
+### Community Track Fit
 For individuals experiencing schizophrenia, sensory overwhelm, or perception distress, asking *"Is someone in the room with me?"* is a profoundly vulnerable experience. Traditional digital tools often stigmatize, clinicalize, or dismiss these experiences.
 
 **HavenCheck** is a compassionate, text-first visual grounding companion. A user intentionally takes or uploads a single room photo. HavenCheck performs an objective, calm assessment:
@@ -17,7 +15,7 @@ For individuals experiencing schizophrenia, sensory overwhelm, or perception dis
 3. **Provides an objective scene overview and visibility notes** — explicitly identifying dim lighting, shadows, obscured corners, or angle limitations so the user has context without fear.
 4. **Never makes absolute claims of reality** — it respects the user, avoids diagnosing or treating, refuses to confirm persecutory narratives, and includes built-in mental health support helplines (988, Crisis Text Line 741741, SAMHSA).
 
-### 🤖 Best Use of Gemini API
+### Best Use of Gemini API
 HavenCheck leverages the official **Google GenAI SDK (`@google/genai`)** with Gemini's state-of-the-art multimodal vision capabilities (`gemini-3.5-flash`):
 - **Multimodal Visual Reasoning**: Analyzes high-resolution indoor photographs alongside natural-language inquiries.
 - **Strict Structured JSON Schema**: Uses `responseMimeType: "application/json"` and `responseSchema` to guarantee consistent, type-safe output:
@@ -35,7 +33,7 @@ HavenCheck leverages the official **Google GenAI SDK (`@google/genai`)** with Ge
   - Refuses to validate frightening, persecutory, or paranoid interpretations (e.g. never asserts someone is "hiding" or "watching").
 - **Zero-Retention Ephemeral Privacy**: Neither image data, questions, nor analysis results are ever written to databases, disk, analytics, or training logs. The scan lives only in active browser memory and can be cleared instantly with one click.
 
-### 🌐 Frutiger Aero Special Track Fit
+### Frutiger Aero Special Track Fit
 HavenCheck is styled in an optimistic, early-2000s **Frutiger Aero** aesthetic inspired by sky, water, nature, and friendly technology:
 - **Calm, Reassuring Palette**: Soft gradients of sky blue, aqua, marine teal, and fresh leafy green.
 - **Tactile Skeuomorphic Sheens**: Glossy pill buttons with top specular highlights, glass-like drop shadows, and translucent frosted panels (`backdrop-filter: blur()`).
@@ -44,7 +42,7 @@ HavenCheck is styled in an optimistic, early-2000s **Frutiger Aero** aesthetic i
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - **Node.js** (v18+ or v20+ recommended)
@@ -91,7 +89,7 @@ npm run start
 
 ---
 
-## 🔒 Security & Privacy Guarantees
+## Security & Privacy Guarantees
 
 - **Server-Side API Key Protection**: `GEMINI_API_KEY` is loaded exclusively inside server-side route handlers (`/api/analyze`). It is never bundled into client JavaScript, exposed in headers, or logged.
 - **Ephemeral Scan Lifecycle**: Images captured from the camera or selected from disk are held in volatile browser memory for the duration of the current scan. No database, session storage, local storage, or telemetry storage is used.
@@ -101,7 +99,7 @@ npm run start
 
 ---
 
-## 📱 Mobile, Camera & HTTPS Notes
+## Mobile, Camera & HTTPS Notes
 
 ### Camera Permissions & Secure Contexts
 Browsers require a **Secure Context** to access the camera hardware via `navigator.mediaDevices.getUserMedia`:
@@ -114,7 +112,7 @@ Browsers require a **Secure Context** to access the camera hardware via `navigat
 
 ---
 
-## 🩺 Important Limitations & Ethical Notice
+## Important Limitations & Ethical Notice
 
 HavenCheck is an assistive visual grounding tool designed to offer reassuring, objective descriptions of a photograph.
 - **Single Angle Limitation**: The app analyzes only what is framed in a single photograph. It cannot see outside the camera's field of view, behind closed doors, or beneath furniture.
@@ -127,7 +125,7 @@ HavenCheck is an assistive visual grounding tool designed to offer reassuring, o
 
 ---
 
-## 🛠️ Verification & Quality Commands
+## Verification & Quality Commands
 
 ```bash
 # Run ESLint
